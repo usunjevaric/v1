@@ -1,1 +1,53 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.navigation {
+  background-color: #43434D;
+  min-height: 4rem;
+  font-family: "Times New Roman";
+  font-weight: 900;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navigation a {
+  color: #fff;
+  text-transform: uppercase;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation i {
+  color: #fff;
+}
+
+.navigation .nav-list li {
+  margin: 0 1.3rem;
+  height: 4rem;
+  padding: 0 1rem;
+  -webkit-transition: 0.4s ease-in-out all;
+  transition: 0.4s ease-in-out all;
+}
+
+.navigation .nav-list li:hover {
+  background-color: #7E5049;
+  -webkit-transition: 0.4s ease-in-out all;
+  transition: 0.4s ease-in-out all;
+}
+
+#home {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=main.css.map */

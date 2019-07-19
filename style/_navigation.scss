@@ -1,0 +1,30 @@
+.navigation{
+  background-color: $header-primaray;
+  min-height: 4rem;
+  font-family: $work-sanse;
+  font-weight: 900;
+  padding-top: 0;
+  padding-bottom: 0;
+  a{
+    color: #fff;
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  i{
+    color: #fff;
+  }
+
+  .nav-list li{
+    margin: 0 1.3rem;
+    height: 4rem;
+    padding: 0 1rem;
+    @include transitionFast();
+    &:hover{
+      background-color: $brown-primary;
+      @include transitionFast();
+    }
+  }
+}
