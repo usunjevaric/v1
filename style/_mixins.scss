@@ -1,3 +1,8 @@
 @mixin transitionFast {
   transition: 0.4s ease-in-out all;
-}
+};
+
+@mixin transformSocialIcons($deg) {
+  transform: rotate($deg);
+  transition: 1.2s ease-in-out all;
+};

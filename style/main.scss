@@ -1,5 +1,5 @@
-@import 'colorsFonts';
 @import 'mixins';
+@import 'colorsFonts';
 @import 'navigation';
 @import 'home';
 
@@ -7,6 +7,6 @@
   margin: 0;
   padding: 0;
 }
-html{
-
+a{
+  color: #fff;
 }

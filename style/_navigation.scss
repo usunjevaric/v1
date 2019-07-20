@@ -6,11 +6,14 @@
   padding-top: 0;
   padding-bottom: 0;
   a{
-    color: #fff;
     text-transform: uppercase;
     height: 100%;
     display: flex;
     align-items: center;
+    
+    &:hover{
+      color: #fff;
+    }
   }
 
   i{
@@ -23,8 +26,9 @@
     padding: 0 1rem;
     @include transitionFast();
     &:hover{
-      background-color: $brown-primary;
+      background-color: $hover-primary;
       @include transitionFast();
+      border-bottom: 2px solid red;
     }
   }
 }
