@@ -22,21 +22,27 @@
 </head>
 
 <body>
+
   <!-- navigation -->
+  <!--
   <header>
-    <nav class="navbar navbar-expand-lg navigation">
+    <nav id="nav" class="navbar navbar-expand-lg fixed-top navigation">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <button class="navbar-toggler collapse-btn" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-bars"></i> 
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto nav-list">
-            <li class="nav-item active">
+          <ul class="navbar-nav mx-auto nav-list ">
+            <li class="nav-item nav-item-active">
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About me</a>
+              <a class="nav-link" href="#about-me">About me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">portfolio</a>
@@ -51,7 +57,36 @@
         </div>
       </div>
     </nav>
-  </header>
+  </header>-->
+  <nav id="nav" class="navigation">
+    <button class="collapse-btn" type="button">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </button>
+
+    <div class="navMenu" id="navbarNav">
+      <ul class="mx-auto nav-list nav-list-hide">
+        <li class="nav-item nav-item-active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-me">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">my skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">contact me</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+  </nav>
 
   <main>
     <!-- first section /home -->
@@ -67,7 +102,7 @@
         <a href=""><i class="fab fa-google-plus-g"></i></a>
       </div>
       <div class="scroll-indicator">
-        <a href="">
+        <a href="#about-me">
           <span></span>
           <span></span>
           <span></span>
@@ -75,7 +110,11 @@
       </div>
     </div>
     <!-- home end -->
-
+    <div id="about-me">
+      <div class="about-me-content">
+        asd
+      </div>
+    </div>
 
 
   </main>

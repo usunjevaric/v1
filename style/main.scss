@@ -2,11 +2,14 @@
 @import 'colorsFonts';
 @import 'navigation';
 @import 'home';
-
+@import 'about-me';
 *{
   margin: 0;
   padding: 0;
 }
 a{
   color: #fff;
+}
+html{
+  scroll-behavior: smooth;
 }

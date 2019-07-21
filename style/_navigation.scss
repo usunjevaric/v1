@@ -1,11 +1,18 @@
 .navigation{
   background-color: $header-primaray;
-  min-height: 4rem;
+  position: fixed;
+  width: 100%;
+  height: 5rem;
   font-family: $work-sanse;
   font-weight: 900;
   padding-top: 0;
   padding-bottom: 0;
-  a{
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include transitionFast();
+    a{
     text-transform: uppercase;
     height: 100%;
     display: flex;
@@ -20,15 +27,319 @@
     color: #fff;
   }
 
-  .nav-list li{
-    margin: 0 1.3rem;
-    height: 4rem;
-    padding: 0 1rem;
-    @include transitionFast();
+  .collapse-btn{
+    display: none;
+  }
+  .navMenu{
+    height: 100%;
+    .nav-list {
+      z-index: 101;
+      li{
+        margin: 0 1.3rem;
+        height: 5rem;
+        padding: 0 1rem;
+        display: inline-block;
+        
+        @include transitionFast();
+        &:hover{
+          background-color: $hover-primary;
+          @include transitionFast();
+        }
+      }
+    }
+  }
+  .nav-item-active{
+    border-bottom: 2px solid $navigation-boreder-color;
+  }
+}
+
+.navigation-scrolled{
+  background-color: $header-primaray;
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  font-family: $work-sanse;
+  font-weight: 900;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include transitionFast();
+    a{
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
     &:hover{
-      background-color: $hover-primary;
+      color: #fff;
+    }
+  }
+
+  i{
+    color: #fff;
+  }
+
+  .collapse-btn{
+    width: 52px;
+    height: 40px;
+    display: none;
+      .btn-line{
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+  }
+  .navMenu{
+    height: 100%;
+    .nav-list {
+      z-index: 101;
+      li{
+        margin: 0 1.3rem;
+        height: 4rem;
+        padding: 0 1rem;
+        display: inline-block;
+        
+        @include transitionFast();
+        &:hover{
+          background-color: $hover-primary;
+          @include transitionFast();
+        }
+      }
+    }
+  }
+  .nav-item-active{
+    border-bottom: 2px solid $navigation-boreder-color;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .navigation{
+    justify-content: start;
+    .collapse-btn{
+      position: absolute;
+      outline: none;
+      width: 30px;
+      height: 40px;
+      display: block;
+      border:none;
+      background: none;
+      margin-left: 2rem;
       @include transitionFast();
-      border-bottom: 2px solid red;
+        .btn-line{
+          cursor: pointer;
+          width: 100%;
+          height: 3px;
+          background-color: #fff;
+          margin-top: 4px;
+          margin-bottom: 4px;
+          @include transitionFast();
+        }
+
+      &.close{
+        transform: rotate(180deg);
+
+        .btn-line{
+          &:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 4px);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -5px);
+          }
+        }
+      }
+    }
+    .navMenu{
+      // display: none;
+      .nav-list {
+        position: absolute;
+        width: 100%;
+        top: 5rem;
+        background-color: $header-primaray;
+        li{
+          width: 100%;
+          margin: 0;
+          height: 4rem;
+          display: block;
+        }
+      }
+      .nav-list-hide{
+        left: -300rem;
+        @include transitionFast();
+      }
+      .nav-list-show{
+        left: 0;
+        @include transitionFast();
+      }
+    }
+    .nav-item-active{
+      border: none;
+    }
+  }
+
+  .navigation-scrolled{
+    justify-content: start;
+    .collapse-btn{
+      position: absolute;
+      outline: none;
+      width: 30px;
+      height: 40px;
+      display: block;
+      border:none;
+      background: none;
+      margin-left: 2rem;
+      @include transitionFast();
+        .btn-line{
+          cursor: pointer;
+          width: 100%;
+          height: 3px;
+          background-color: #fff;
+          margin-top: 4px;
+          margin-bottom: 4px;
+          @include transitionFast();
+        }
+        &.close{
+          transform: rotate(180deg);
+  
+          .btn-line{
+            &:nth-child(1) {
+              transform: rotate(45deg) translate(5px, 4px);
+            }
+            &:nth-child(2) {
+              opacity: 0;
+            }
+            &:nth-child(3) {
+              transform: rotate(-45deg) translate(6px, -5px);
+            }
+          }
+        }
+    }
+    .navMenu{
+    
+      .nav-list {
+        position: absolute;
+        width: 100%;
+        top: 4rem;
+        background-color: $header-primaray;
+        li{
+          width: 100%;
+          margin: 0;
+          height: 4rem;
+          display: block;
+        }
+      }
+      .nav-list-hide{
+        left: -300rem;
+        @include transitionFast();
+      }
+      .nav-list-show{
+        left: 0;
+        @include transitionFast();
+      }
+    }
+    .nav-item-active{
+      border: none;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .navigation{
+    .navMenu{
+      .nav-list {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: $header-primaray;
+        font-size: .9rem;
+        font-weight: 400;
+        li{
+          width: auto;
+          margin: 0 .1rem;
+          height: 5rem;
+          padding: 0;
+        }
+      }
+      .nav-list-hide{
+      }
+    }
+    .nav-item-active{
+      border: none;
+    }
+  }
+
+  .navigation-scrolled{
+    justify-content: start;
+    .collapse-btn{
+      position: absolute;
+      outline: none;
+      width: 30px;
+      height: 40px;
+      display: block;
+      border:none;
+      background: none;
+      margin-left: 2rem;
+      @include transitionFast();
+        .btn-line{
+          cursor: pointer;
+          width: 100%;
+          height: 3px;
+          background-color: #fff;
+          margin-top: 4px;
+          margin-bottom: 4px;
+          @include transitionFast();
+        }
+        &.close{
+          transform: rotate(180deg);
+  
+          .btn-line{
+            &:nth-child(1) {
+              transform: rotate(45deg) translate(5px, 4px);
+            }
+            &:nth-child(2) {
+              opacity: 0;
+            }
+            &:nth-child(3) {
+              transform: rotate(-45deg) translate(6px, -5px);
+            }
+          }
+        }
+    }
+    .navMenu{
+    
+      .nav-list {
+        position: absolute;
+        width: 100%;
+        top: 4rem;
+        background-color: $header-primaray;
+        li{
+          width: 100%;
+          margin: 0;
+          height: 4rem;
+          display: block;
+        }
+      }
+      .nav-list-hide{
+        left: -300rem;
+        @include transitionFast();
+      }
+      .nav-list-show{
+        left: 0;
+        @include transitionFast();
+      }
+    }
+    .nav-item-active{
+      border: none;
     }
   }
 }
