@@ -1,6 +1,35 @@
 #about-me{
-  height: 1200vh;
-  margin-top: 0;
-  padding-top: 4rem;
-  
+  margin-top: -45vh;
+  height:45vh;
+  background-color: $primary-5;
+  color: #fff;
+  font-family: $work-sanse;
+  text-align:center;
+  .about-me-content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ho-am-i{
+
+      p{
+        width: 70%;
+      }
+    }
+  }
+}
+
+.about-second{
+  font-family: $work-sanse;
+  background-color: $gray;
+  color: #fff;
+  height: 51vh;
+
+  .about-second__detailed{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

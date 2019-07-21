@@ -1,6 +1,5 @@
 #home{
-  // margin-top: 5rem;
-  height: 100vh;
+  height: 165vh;
   width: 100%;
   background-image: url(../images/background.jpg);
   background-position:0 4rem;
@@ -9,14 +8,14 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
+  background-attachment: fixed;
   .home-content{
     width: 30%;
     height: 20vh;
     text-align: center;
     color: #fff;
     margin-top: 20rem;
-    font-family: 'Gochi Hand', cursive;
+    font-family: $gochi-hand;
     font-size: 59px;
     text-shadow: 7px 1px 10px #000;
     }
