@@ -1,0 +1,106 @@
+#skills{
+  margin-bottom: 20rem;
+  .half-color{
+    padding-top: 5rem;
+    width: 100%;
+    height: 40vh;
+    background-color: $gray;
+    
+  }
+  .skills-content{
+    box-shadow:0px 0px 3px rgb(136, 136, 136);
+    margin-top: -30vh;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    .skill{
+      width: 30%;
+      padding: 4rem 2rem;
+      text-align: center;
+      &-icon{
+        font-size: 4rem;
+        margin-bottom: 3rem;
+
+        i{
+          filter: grayscale(30%);
+          opacity: .7;
+          @include transitionFast();
+
+          &:hover{
+            filter: grayscale(0);
+            opacity: 1;
+            @include transitionFast();
+          }
+        }
+      }
+    }
+    .skill-desc{
+      color: $gray;
+
+      p{
+        position: relative;
+        margin-bottom: 3rem;
+      }
+      p::before{
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background-color: $gray;
+        border-radius: 50%;
+        top: -10px;
+        left: 50%;
+
+      }
+    }
+
+    .htmlCss{
+      border-right: 1px solid $border-gray;
+      .fa-html5{
+        color: $html-orange;
+      }
+      .fa-css3-alt{
+        color: $css-blue;
+      }
+    }
+
+    .js{
+      border-right: 1px solid $border-gray;
+      .fa-js{
+        color: $js-yellow;
+      }
+      .fa-react{
+        color: $react-blue;
+      }
+    }
+
+    .other{
+      .fa-laptop-code{
+        color: $gray;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  #skills{
+    .skills-content{
+      
+      flex-direction: column;
+      align-items: center;
+      width: 80%!important;
+      .skill{
+        width: 90%!important;
+      }
+      
+    .htmlCss,.js{
+      border-right: none;
+      border-bottom: 1px solid $border-gray;
+    }
+    }
+  }
+
+}

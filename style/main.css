@@ -219,7 +219,7 @@
   border-bottom: 2px solid rgba(61, 221, 21, 0.616);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
   .navigation {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -356,7 +356,7 @@
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
+@media only screen and (min-width: 576px) and (max-width: 992px) {
   .navigation .navMenu .nav-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -585,28 +585,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  #home {
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #home .home-content {
-    width: 70%;
-    margin-top: 18rem;
-    font-size: 49px;
-  }
-  #home .home-social {
-    display: none;
-  }
-  #home .scroll-indicator {
-    -webkit-transform: translateY(-40px) translateX(-50%) rotate(45deg);
-            transform: translateY(-40px) translateX(-50%) rotate(45deg);
-  }
-}
-
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 576px) {
   #home {
     width: 100%;
     background-position: center;
@@ -617,6 +596,27 @@
     width: 70%;
     margin-top: 8rem;
     font-size: 48px;
+  }
+  #home .home-social {
+    display: none;
+  }
+  #home .scroll-indicator {
+    -webkit-transform: translateY(-40px) translateX(-50%) rotate(45deg);
+            transform: translateY(-40px) translateX(-50%) rotate(45deg);
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  #home {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #home .home-content {
+    width: 70%;
+    margin-top: 18rem;
+    font-size: 49px;
   }
   #home .home-social {
     display: none;
@@ -656,7 +656,6 @@
 .about-second {
   font-family: "Work Sans", sans-serif;
   background-color: #565660;
-  margin-bottom: 20rem;
   padding: 4rem 0;
 }
 
@@ -693,31 +692,7 @@
   font-size: 15px;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
-  .about-second {
-    padding: 3rem 0;
-  }
-  .about-second .about-second__detailed .my-text {
-    width: 80%;
-  }
-  .about-second .about-second__detailed .my-text p {
-    font-size: 14px;
-  }
-}
-
-@media only screen and (min-width: 421px) and (max-width: 768px) {
-  .about-second {
-    padding: 2rem 0;
-  }
-  .about-second .about-second__detailed .my-text {
-    width: 80%;
-  }
-  .about-second .about-second__detailed .my-text p {
-    font-size: 14px;
-  }
-}
-
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 576px) {
   #about-me .about-me-content .ho-am-i h1 {
     font-size: 1.8rem;
   }
@@ -731,6 +706,151 @@
   .about-second .about-second__detailed .my-text {
     width: 90%;
     font-size: .9rem;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .about-second {
+    padding: 2rem 0;
+  }
+  .about-second .about-second__detailed .my-text {
+    width: 80%;
+  }
+  .about-second .about-second__detailed .my-text p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .about-second {
+    padding: 3rem 0;
+  }
+  .about-second .about-second__detailed .my-text {
+    width: 80%;
+  }
+  .about-second .about-second__detailed .my-text p {
+    font-size: 14px;
+  }
+}
+
+#skills {
+  margin-bottom: 20rem;
+}
+
+#skills .half-color {
+  padding-top: 5rem;
+  width: 100%;
+  height: 40vh;
+  background-color: #565660;
+}
+
+#skills .skills-content {
+  -webkit-box-shadow: 0px 0px 3px #888888;
+          box-shadow: 0px 0px 3px #888888;
+  margin-top: -30vh;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#skills .skills-content .skill {
+  width: 30%;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#skills .skills-content .skill-icon {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+#skills .skills-content .skill-icon i {
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
+  opacity: .7;
+  -webkit-transition: 0.4s ease-in-out all;
+  transition: 0.4s ease-in-out all;
+}
+
+#skills .skills-content .skill-icon i:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  opacity: 1;
+  -webkit-transition: 0.4s ease-in-out all;
+  transition: 0.4s ease-in-out all;
+}
+
+#skills .skills-content .skill-desc {
+  color: #565660;
+}
+
+#skills .skills-content .skill-desc p {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+#skills .skills-content .skill-desc p::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #565660;
+  border-radius: 50%;
+  top: -10px;
+  left: 50%;
+}
+
+#skills .skills-content .htmlCss {
+  border-right: 1px solid #ebebeb;
+}
+
+#skills .skills-content .htmlCss .fa-html5 {
+  color: #e34f26;
+}
+
+#skills .skills-content .htmlCss .fa-css3-alt {
+  color: #2A4EE2;
+}
+
+#skills .skills-content .js {
+  border-right: 1px solid #ebebeb;
+}
+
+#skills .skills-content .js .fa-js {
+  color: #EFDA52;
+}
+
+#skills .skills-content .js .fa-react {
+  color: #00d8ff;
+}
+
+#skills .skills-content .other .fa-laptop-code {
+  color: #565660;
+}
+
+@media only screen and (max-width: 768px) {
+  #skills .skills-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80% !important;
+  }
+  #skills .skills-content .skill {
+    width: 90% !important;
+  }
+  #skills .skills-content .htmlCss, #skills .skills-content .js {
+    border-right: none;
+    border-bottom: 1px solid #ebebeb;
   }
 }
 

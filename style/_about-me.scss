@@ -22,7 +22,6 @@
 .about-second{
   font-family: $work-sanse;
   background-color: $gray;
-  margin-bottom: 20rem;
   padding: 4rem 0;
   .about-second__detailed{
     width: 100%;
@@ -45,36 +44,8 @@
     }
   }
 }
-@media only screen and(min-width: 769px) and (max-width: 1200px) {
-  .about-second{
-    padding: 3rem 0;
-    .about-second__detailed{
-      .my-text{
-        width: 80%;
-        p{
-          font-size:14px;
-        }
-      }
-    }
-  }
-}
 
-
-@media only screen and(min-width: 421px) and (max-width: 768px) {
-  .about-second{
-    padding: 2rem 0;
-  
-    .about-second__detailed{
-      .my-text{
-        width: 80%;
-        p{
-          font-size:14px;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 576px) {
   #about-me{
     .about-me-content{
       .ho-am-i{
@@ -98,3 +69,35 @@
     }
   }
 }
+
+@media only screen and(min-width: 576px) and (max-width: 768px) {
+  .about-second{
+    padding: 2rem 0;
+  
+    .about-second__detailed{
+      .my-text{
+        width: 80%;
+        p{
+          font-size:14px;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and(min-width: 768px) and (max-width: 992px) {
+  .about-second{
+    padding: 3rem 0;
+    .about-second__detailed{
+      .my-text{
+        width: 80%;
+        p{
+          font-size:14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 992px) and (max-width: 1200px){}
