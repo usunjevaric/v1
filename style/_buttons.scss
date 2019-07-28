@@ -133,3 +133,19 @@
     @include transitionFast();
   }
 }
+.button-submit{
+  padding: 1rem 4rem;
+  background: none;
+  border: 1px solid $gray;
+  align-self: center;
+ 
+  &:hover{
+    box-shadow: 3px 3px 7px $gray;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .button-submit{
+    align-self: stretch;
+  }
+}

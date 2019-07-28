@@ -1,0 +1,35 @@
+footer{
+  height: 30vh;
+  width: 100%;
+  background-color: $header-primaray;
+  padding: 2rem 0;
+
+  .footer-content{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    .footer-left{
+      width: 40%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+        img{
+          height: 80%;
+        }
+        &-text{
+          h4{
+            color: $navigation-boreder-color;
+          }
+          p{
+            color: $border-gray;
+          }
+        }
+      
+    }
+    .footer-right{
+      width: 30%;
+      height: 100%;
+    }
+  }
+}
