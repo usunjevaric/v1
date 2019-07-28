@@ -80,13 +80,9 @@
     top: 0;
     transform: scale(1);
   }
-
-
   &:hover:after{
     transform: scale(1);
   }
-    
-
 }
 
 // .button-git{
@@ -147,5 +143,11 @@
 @media only screen and (max-width: 768px) {
   .button-submit{
     align-self: stretch;
+  }
+  .button-git{
+    margin-bottom: 7rem;
+  }
+  .button-banner{
+    margin: 0;
   }
 }

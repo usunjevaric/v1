@@ -85,11 +85,12 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   #portfolio{
     padding: 5rem 0;
-    height: 100vh;
+    height: 120vh;
     .portfolio-content{
+      margin-top: 3rem;
       .works{
         height: 80vh;
         width: 100%;
