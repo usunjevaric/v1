@@ -42,3 +42,19 @@ navItems.forEach(item => {
   })
 }
 );
+
+//hover effects on work images
+const work = document.querySelectorAll('.work');
+work.forEach(item => {
+  item.addEventListener('mouseenter', (e) => {
+    e.target.children[1].classList.remove('work-desc');
+    e.target.children[1].classList.add('work-desc-active');
+  })
+});
+work.forEach(item => {
+  item.addEventListener('mouseleave', (e) => {
+    e.target.children[1].classList.remove('work-desc-active');
+    e.target.children[1].classList.add('work-desc');
+
+  })
+})

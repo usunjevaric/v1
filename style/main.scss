@@ -5,6 +5,9 @@
 @import 'home';
 @import 'about-me';
 @import 'skills';
+@import 'contact-banner';
+@import 'portfolio';
+
 *{
   margin: 0;
   padding: 0;
@@ -14,4 +17,7 @@ a{
 }
 html{
   scroll-behavior: smooth;
+}
+button{
+  outline: none!important;
 }
