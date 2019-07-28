@@ -1146,6 +1146,7 @@
 }
 
 #contact {
+  padding-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -1228,10 +1229,11 @@
 }
 
 footer {
-  height: 30vh;
+  height: 35vh;
   width: 100%;
   background-color: #292929;
   padding: 2rem 0;
+  position: relative;
 }
 
 footer .footer-content {
@@ -1242,6 +1244,7 @@ footer .footer-content {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+  padding-bottom: 2rem;
 }
 
 footer .footer-content .footer-left {
@@ -1331,6 +1334,16 @@ footer .footer-content .footer-right .footer-social a:hover .fa-twitter {
 
 footer .footer-content .footer-right .footer-social a:hover .fa-google-plus-g {
   color: #db4a39;
+}
+
+footer .copyright {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.452);
 }
 
 @media only screen and (max-width: 768px) {
@@ -1423,7 +1436,7 @@ footer .footer-content .footer-right .footer-social a:hover .fa-google-plus-g {
   }
   footer .footer-content .footer-right {
     width: 100%;
-    height: 40%;
+    height: 35%;
   }
 }
 
