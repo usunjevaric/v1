@@ -242,7 +242,7 @@
 }
 
 .navigation .nav-item-active {
-  border-bottom: 2px solid rgba(61, 221, 21, 0.616);
+  border-bottom: 3px solid rgba(61, 221, 21, 0.616);
 }
 
 .navigation-scrolled {
@@ -325,7 +325,7 @@
 }
 
 .navigation-scrolled .nav-item-active {
-  border-bottom: 2px solid rgba(61, 221, 21, 0.616);
+  border-bottom: 3px solid rgba(61, 221, 21, 0.616);
 }
 
 @media only screen and (max-width: 576px) {
